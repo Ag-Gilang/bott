@@ -32,29 +32,35 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭─『 %me 』
-│ Hai, %name!
-│
-│ Tersisa *%limit Limit*
-│ Role *%role*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
+┌◪ ┉┄┈┈┈*『im %me 』*┈┈┈┉┓
+│ │ 
+│ ├❒*Hai  : %name!*
+│ ├❒*limit : %limit Limit*
+│ ├❒*Role : %role*
+│ ├❒*Level: %level (%exp / %maxexp)* 
+│ └❒*Total Xp : %totalxp*
 │ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
+├◪ *TIME ⏳*
+│ ├❒*Hari: %week %weton*
+│ ├❒*Tanggal : %date*
+│ └❒*Waktu: %time*
 │
-│ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github :
-│ https://github.com/LitRHap/wabot
-│ Instagram :
-│ https://instagram.com/loli._.school
-╰────
+├◪ *STATUS BOT*
+│ ├❒*Uptime: %uptime (%muptime)*
+│ ├❒*Database: %rtotalreg of %totalreg*
+│ └❒*Github: %github*
+│
+├◪ *INFO OWNER BOT*
+││
+│├❒ wa.me/6289678391870
+│├❒ *tele owner : @aryagilangg*
+│├❒ *Ig owner : @_aryagilang*
+│└❒ _*© Aryagilang*_
+└───────────────────────
 %readmore`.trimStart(),
   header: '┏┉┄┈┈┈『%category』┈┈┈┈┈┉┓',
-  body: '┆➜ %cmd %islimit %isPremium',
-  footer: '└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n',
+  body: '├◪ %cmd %islimit %isPremium',
+  footer: '└───────────────────────\n\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
