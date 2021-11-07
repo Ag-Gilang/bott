@@ -6,7 +6,7 @@ global.thumb = 'https://i.ibb.co/34PV5yH/By-Relldev.jpg'
 global.thumb2 = fs.readFileSync('./src/emror.jpeg')
 global.owner = ['6289678391870', '62896783918700', '62896783918701','6281290014897'] // Put your number here
 global.mods = ['6289678391870'] // Want some help?
-global.prems = ['628678391870','6281290014897'] // Premium user has unlimited limit
+global.prems = ['6289678391870','6281290014897'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
