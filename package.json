@@ -19,16 +19,16 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/LitRHap/wabot",
+  "homepage": "https://github.com/Ag-Gilang/bott",
   "author": {
-    "name": "LitRHap"
+    "name": "Aryagilang"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LitRHap/wabot.git"
+    "url": "git+https://github.com/Ag-Gilang/bott.git"
   },
   "bugs": {
-    "url": "https://github.com/LitRHap/wabot/issues"
+    "url": "https://github.com/Ag-Gilang/bott/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
