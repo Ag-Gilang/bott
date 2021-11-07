@@ -4,9 +4,9 @@ global.tum = fs.readFileSync('./src/Ah5.jpeg')
 global.tum2 = fs.readFileSync('./src/emror.jpeg')
 global.thumb = 'https://i.ibb.co/34PV5yH/By-Relldev.jpg'
 global.thumb2 = fs.readFileSync('./src/emror.jpeg')
-global.owner = ['6289681378568', '6283820073017', '6283801499848','85290882526','6285240750713','6288286421519'] // Put your number here
-global.mods = ['6285693120588'] // Want some help?
-global.prems = ['6287842147162','6285893120588','6285656615441'] // Premium user has unlimited limit
+global.owner = ['6289678391870', '62896783918700', '62896783918701','6281290014897'] // Put your number here
+global.mods = ['6289678391870'] // Want some help?
+global.prems = ['628678391870','6281290014897'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -29,8 +29,8 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'I hope you\'re fine'
-global.author = 'LitRHap'
+global.packname = '© im'
+global.author = 'AgBot^^'
 global.multiplier = 69 // The higher, The harder levelup
 
 let chalk = require('chalk')
