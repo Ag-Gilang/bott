@@ -24,7 +24,7 @@ let tags = {
   'absen': 'Absen',
   'quran': 'Al Quran',
   'jadibot': 'Jadi Bot',
-  'owner': 'BOSS Menu',
+  'owner': 'Owner Menu',
   'host': 'Host',
   'advanced': 'Advanced',
   'info': 'Ingfo',
@@ -32,13 +32,13 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-┌◪ ┉┄┈┈┈*『im %me 』*┈┈┈┉┓
+┌◪ ──*「 ```%me``` 」*──
 │ │ 
 │ ├❒*Hai  : %name!*
 │ ├❒*limit : %limit Limit*
 │ ├❒*Role : %role*
 │ ├❒*Level: %level (%exp / %maxexp)* 
-│ └❒*Total Xp : %totalxp*
+│ └❒*Total Xp : %totalexp*
 │ 
 ├◪ *TIME ⏳*
 │ ├❒*Hari: %week %weton*
@@ -48,7 +48,7 @@ const defaultMenu = {
 ├◪ *STATUS BOT*
 │ ├❒*Uptime: %uptime (%muptime)*
 │ ├❒*Database: %rtotalreg of %totalreg*
-│ └❒*Github: %github*
+│ └❒*${chats.length}* Total Chat
 │
 ├◪ *INFO OWNER BOT*
 ││
@@ -58,8 +58,8 @@ const defaultMenu = {
 │└❒ _*© Aryagilang*_
 └───────────────────────
 %readmore`.trimStart(),
-  header: '┏┉┄┈┈┈*『%category』*┈┈┈┈┈┉┓',
-  body: '├◪ *%cmd %islimit %isPremium*',
+  header: '┌──*「 ```%category``` 」*──',
+  body: '├◪ %cmd %islimit %isPremium',
   footer: '└───────────────────────\n\n',
   after: `
 *%npmname@^%version*
@@ -178,7 +178,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
 }
 let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `Relldev`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN: Rlxfly UwU\nitem1.TEL;waid=6283820073017:6283820073017\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
-conn.send3ButtonImg(m.chat, thumb, `Hi! Im ${conn.user.name}\n\nHere my menu...`, text.trim(), 'ping', '.ping', 'owner', '-owner', 'donasi', '.donasi', reply)
+conn.send3ButtonImg(m.chat, thumb, `Here My Menu...`, text.trim(), 'ping', '.ping', 'owner', '-owner', 'donasi', '.donasi', reply)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
