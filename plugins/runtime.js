@@ -18,7 +18,7 @@ function kyun(seconds){
 					runtime = process.uptime()
 					teks = `${kyun(runtime)}`
 					var itsme = `0@s.whatsapp.net`
-					var split = `LitRHap ">//<"`
+					var split = `Ag Bot ">//<"`
 					const rtimebro = {
 					contextInfo: {
 					participant: itsme,
@@ -29,7 +29,7 @@ function kyun(seconds){
 								}
 							}
 						}
-						conn.sendMessage(m.chat, '```RUNTIME```', 'conversation', {thumbnail: pelo, contextInfo:{externalAdReply: {title: 'LitRHap ">//<"', sourceUrl: '', body: `${teks}`, thumbnail: peli}}})
+						conn.sendMessage(m.chat, '```RUNTIME```', 'conversation', {thumbnail: pelo, contextInfo:{externalAdReply: {title: 'Ag Bot ">//<"', sourceUrl: '', body: `${teks}`, thumbnail: peli}}})
 				/*	conn.sendMessage(m.chat, `${teks}`, MessageType.text, rtimebro)*/
 }
 
